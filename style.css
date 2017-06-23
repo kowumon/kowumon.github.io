@@ -1,0 +1,199 @@
+body{
+    font-family:'맑은 고딕','Apple SD Gothic Neo',sans-serif
+}
+.boxA:after{
+    content: "";
+    display: block;
+    clear: both
+}
+@media(min-width: 768px){
+    .box3{
+        float: left;
+        width: 80%
+    }
+    .box4{
+        float: left;
+        width: 20%
+    }
+}
+/*------------------------------------------- 599px 이하일때 */
+@media(max-width:599px){
+    /*네비게이션*/
+    .menu li a{
+    padding: 18px 3px;
+        font-size: 11px
+    }
+    /*사이트 이름과 기사제목*/
+    .siteName{font-size: 20px}
+    .journal h1{font-size: 26px}
+    /*박스 위아래 간격*/
+    .box1{padding: 4px 0 4px}
+    .box3{padding-top: 25px}
+}
+
+
+/*------------------------------------------- 600px 이상일때 */
+@media(min-width:600px)and(max-width:767px){
+    /*------------------BoX4-1과 4-2를 가로 정렬하는 설정*/
+    .box4:after{
+        content: "";
+        display: block;
+        clear: both
+    }
+    .box4-1{
+        float: left;
+        width: 50%
+    }
+}
+/*------------------------------------------- 599px 이하일때 */
+/*------------------------------------------- 박스 위아래 간격 */
+.box1{padding: 8px 0px}
+.box3{padding: 40px 0 30px}
+.box4{padding: 40px 0 30px}
+.box5{padding: 15px}
+/*------------------------------------------- 박스 5위에 태두리 삽입*/
+.box5{border-top: solid 1px #ddd}
+/*------------------------------------------- 박스 3와 4를오른쪽 간격*/
+.box3{padding-right: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+/*------------------------------------------- BOX2 바 형태로 디자인 */
+.box2{background-color: #954121}
+/*------------------------------------------- 사이트 정보 */
+.siteName h1 a{
+    color: #000;
+    text-decoration: none
+}
+.siteName h1{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+/*------------------------------------------- 네비게이션 */
+.menu ul{
+    margin:0;
+    padding:0;
+    list-style: none
+}
+.menu ul:after{
+    content: "";
+    display: block;
+    clear: both
+}
+.menu li{
+    float: left;
+    width: auto
+}
+.menu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 12px;
+    text-decoration: none
+}
+.menu li a:hover{
+    background-color: #F3C010;
+}
+/*------------------------------------------- Journal */
+.journal h1{
+    margin-top:0;
+    margin-bottom: 20px;
+    font-size: 36px
+}
+.journal p{
+    margin-top: 0;
+    margin-bottom: 20px
+}
+.journal p img{
+    max-width: 100%;
+    height: auto
+}
+/*------------------------------------------- Journal time*/
+.journalinfo{margin: -10px 0 20px}
+.journalinfo i{
+    margin-right: 5px;
+    color: #aaa;
+    font-size: 20px
+}
+/*----------------------------------------------기사의 분류*/
+.journal-cat ul{
+    margin: 0;
+    padding: 0;
+list-style: none
+}
+.journal-cat ul:after{
+    content: "";
+    display: block;
+    clear: both
+}
+.journal-cat ul li{
+    float: left;
+    width: auto
+}
+.journal-cat ul li a{
+    display: block;
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #F3C010
+}
+.journal-cat ul li a:hover{
+    background-color: #954121
+}
+/*----------------------------------------------인기 글*/
+.popular ul{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.popular ul li a{
+    display:block;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.popular ul li a:hover{
+    background-color: #eee;
+}
+.popular h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #ddd;
+    color: #666;
+    font-size: 18px
+}
+/*----------------------------------------------추천 글*/
+.recommend ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.recommend ul li a{
+    display:block;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.recommend ul li a:hover{
+    background-color: #eee;
+}
+.recommend h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #ddd;
+    color: #666;
+    font-size: 18px
+}
+/*----------------------------------------------저작권*/
+.copyright p{
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
